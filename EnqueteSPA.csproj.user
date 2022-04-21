@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="CustomTools\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\EnqueteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EnquetesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EnqueteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PersonneAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PersonnesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PersonneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PJList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SalariesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SalariesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SalariesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
