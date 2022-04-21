@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2"
+   assembly = "EnqueteSPA" namespace = "EnqueteSPA.Entities">
+
+  <class name = "Enquete">
+    <id name = "ID">
+      <generator class = "native"/>
+    </id>
+
+
+    <property name = "departement" />
+    <property name = "numeroGenere" />
+    <property name = "annee" />
+    <property name = "mois" />
+    <property name = "etat" />
+    <property name = "subject" />
+
+    <many-to-one class="Personne" column="enqueteurID" name="enqueteur" lazy="false"/>
+    <many-to-one class="Personne" column="plaignantID" name="plaignant" lazy="false"/>
+    <many-to-one class="Personne" column="infracteurID" name="infracteur" lazy="false"/>
+
+    <property name = "commentaires"/>
+
+  </class>
+</hibernate-mapping>

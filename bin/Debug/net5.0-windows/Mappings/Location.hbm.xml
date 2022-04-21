@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2"
+   assembly = "EnqueteSPA" namespace = "EnqueteSPA.Entities">
+
+  <class name = "Location">
+    <id name="ID" column="PERSON_ID">
+      <generator class="foreign">
+        <param name="property">Personne</param>
+      </generator>
+    </id>
+    <property name = "Street"/>
+    <property name = "City"/>
+    <property name = "Province"/>
+    <property name = "Country"/>
+
+  </class>
+</hibernate-mapping>
