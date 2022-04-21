@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2"
+   assembly = "EnqueteSPA" namespace = "EnqueteSPA.Entities">
+
+  <class name = "Enquete_PJ">
+    <id name = "ID">
+      <generator class = "native"/>
+    </id>
+
+    <property name = "file"/>
+    <property name = "dateAjout"/>
+    <many-to-one class="Enquete" column="enqueteID" name="enquete"/>
+
+  </class>
+</hibernate-mapping>

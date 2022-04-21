@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2"
+   assembly = "EnqueteSPA" namespace = "EnqueteSPA.Entities">
+
+  <class name = "Personne">
+    <id name = "ID"  column="personId">
+      <generator class = "native"/>
+    </id>
+
+    <property name = "Name" type = "String"/>
+    <property name = "phone" type = "String"/>
+    <property name = "location" type = "String"/>
+    <many-to-one name="login" lazy="false" class="Login" unique="true"/>
+  </class>
+ 
+</hibernate-mapping>
